@@ -20,7 +20,7 @@ class FilterCepTxt {
   Future<void> saveFileString(String value) async {
     var file = File('ceps_filtered.txt');
     var sink = file.openWrite();
-    sink.write('Hello, world!');
+    sink.write(value);
     await sink.close();
     print(value);
   }
